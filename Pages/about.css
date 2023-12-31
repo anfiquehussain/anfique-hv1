@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #edf2fc;
+    --txt-color: #212121;
+    --hover-color: #ff4321;
+    --p-color: #989899;
+    --btn-color: #edf2fc;
+    --ver:#737373;
+    --github:rgb(0, 0, 0);
+
+}
+
+.Dark-mode {
+    --bg-color:#202124;
+    --txt-color: #fff;
+    --btn-color: #212121;
+    --github:white;
+}
+
+body{
+    background-color: var(--bg-color);
+
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+.hero {
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.logo {
+    width: 3em;
+}
+
+nav {
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--txt-color);
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+.info {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.info h1 {
+    font-size: 70px;
+    color: var(--txt-color);
+    margin-bottom: 20px;
+}
+
+span {
+    color: var(--hover-color);
+}
+
+.info p {
+    font-size: 15px;
+    color: var(--p-color);
+    line-height: 25px;
+}
+
+.btn {
+    background: linear-gradient(to right, #ff4321, #ff846e);
+    padding: 10px 18px;
+    text-decoration: none;
+    color: var(--btn-color);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+
+.btn:hover {
+    background: linear-gradient(to right, #fb5538, #ff7259);
+}
+
+.social-links {
+    margin-left: 8%;
+    margin-top: 90px;
+    position: absolute;
+    bottom: 1%;
+}
+
+.social-links a {
+    font-size: 30px;
+    color: var(--p-color);
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.social-links .fa-twitter:hover {
+    color: #00acee;
+}
+
+.social-links .fa-instagram:hover {
+    color: #cd486b;
+}
+
+.social-links .fa-facebook:hover {
+    color: #3b5998;
+}
+
+.social-links .fa-github:hover {
+    color: var(--github);
+}
+
+.vc p{
+    color: var(--ver);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    padding: 1em;
+}
+
+
+.A-body{
+    color: var(--txt-color);
+    background-color: var(--bg-color);
+}
+
+
+
+
+@media (max-width:500px) {
+    nav ul li a {
+        display: none;
+    }
+
+    .social-links {
+        position: absolute;
+        bottom: 4%;
+        left: 3%;
+    }
+    .info{
+        margin: 20px;
+    }
+    .info span{
+        font-size: 40px;
+    }
+    .vc p{
+        font-size: xx-small;
+    }
+
+}
