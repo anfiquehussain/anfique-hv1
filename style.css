@@ -11,6 +11,7 @@
     --btn-color: #edf2fc;
     --ver:#737373;
     --github:rgb(0, 0, 0);
+    --x:rgb(0, 0, 0);
 }
 
 .Dark-mode {
@@ -18,6 +19,7 @@
     --txt-color: #fff;
     --btn-color: #212121;
     --github:white;
+    --x:white;
 }
 
 #icon {
@@ -120,8 +122,8 @@ span {
     text-decoration: none;
 }
 
-.social-links .fa-twitter:hover {
-    color: #00acee;
+.social-links .fa-x-twitter:hover {
+    color: var(--x);
 }
 
 .social-links .fa-instagram:hover {
@@ -135,7 +137,9 @@ span {
 .social-links .fa-github:hover {
     color: var(--github);
 }
-
+.social-links .fa-linkedin:hover {
+    color: #0077B5;
+}
 .vc p{
     color: var(--ver);
     position: absolute;

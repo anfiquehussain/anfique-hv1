@@ -9,40 +9,33 @@
     --hover-color: #ff4321;
     --p-color: #989899;
     --btn-color: #edf2fc;
-    --ver:#737373;
-    --github:black;
-    --form-bg:#f2f5f9;
-    --from-brd-clr:#1e1d19;
-    --A-dis:#313132;
+    --ver: #737373;
+    --github: rgb(0, 0, 0);
+    --x: rgb(0, 0, 0);
 }
-
-body{
-    background-color: var(--bg-color);
-}
-
-
 
 .Dark-mode {
     --bg-color: #202124;
     --txt-color: #fff;
     --btn-color: #212121;
-    --form-bg:#46484e;
-    --from-brd-clr:#acaca2;
-    --A-dis:#989899;
-    --github:white;
+    --github: white;
+    --x: white;
 }
 
-input:focus{
+body {
+    background-color: var(--bg-color);
+}
+
+input:focus {
     outline: none;
 }
 
 .info {
     margin-left: 8%;
-    margin-top: 5%;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.C-info .left-side{
+.C-info .left-side {
     border: 0.1px solid var(--from-brd-clr);
     background-color: var(--form-bg);
     border-radius: 10px;
@@ -51,17 +44,16 @@ input:focus{
     float: left;
     width: 35%;
     margin-right: 20%;
-    
 }
-
 
 .left-side form {
     text-align: center;
-    color:var(--txt-color);
+    color: var(--txt-color);
     padding: 10%;
     text-align: left;
 }
-.left-side form input{
+
+.left-side form input {
     color: black;
     margin-bottom: 20px;
     margin-top: 5px;
@@ -72,7 +64,7 @@ input:focus{
     padding: 5px;
 }
 
-.left-side form .I-messenge{
+.left-side form .I-messenge {
     color: var(--bg-color);
     margin-bottom: 10px;
     margin-top: 5px;
@@ -80,7 +72,7 @@ input:focus{
     height: 150px;
 }
 
-.left-side form .I-sent{
+.left-side form .I-sent {
     width: 40%;
     border: none;
     background: linear-gradient(to right, #ff4321, #ff846e);
@@ -89,13 +81,13 @@ input:focus{
     margin: 30px 0;
     height: 40px;
     border-radius: 5px;
- }
+}
 
- .left-side form .I-sent:hover{
+.left-side form .I-sent:hover {
     background: linear-gradient(to right, #ff4321, #ff7259);
- }
+}
 
-.left-side form .I-reset{
+.left-side form .I-reset {
     width: 40%;
     border: none;
     background: linear-gradient(to right, #ff4321, #ff846e);
@@ -104,49 +96,49 @@ input:focus{
     margin: 30px 0px;
     height: 40px;
     border-radius: 5px;
- }
+}
 
- .left-side form .I-reset:hover{
+.left-side form .I-reset:hover {
     background: linear-gradient(to right, #ff4321, #ff7259);
- }
+}
 
-
-
-.C-info .right-side{
+.C-info .right-side {
+    color: var(--txt-color);
     padding: 20px;
     float: left;
     width: 25%;
 }
 
-address{
-    color:var(--A-dis);
+address {
+    color: var(--A-dis);
     margin-top: 10px;
     font-size: 15px;
 }
 
-.A-emp{
+.A-emp {
     color: var(--hover-color);
     font-size: 20px;
 }
 
-span{
+span {
     margin-bottom: 10px;
     font-size: 20px;
     margin-left: 5px;
 }
 
-.c-social-links{
+.social-links {
     margin-top: 50%;
 }
-.c-social-links a{
+
+.c-social-links a {
     font-size: 30px;
     color: var(--p-color);
-    margin-right: 30px;
+    margin-right: 0px;
     text-decoration: none;
 }
 
-.c-social-links .fa-twitter:hover {
-    color: #00acee;
+.c-social-links .fa-x-twitter:hover {
+    color: var(--x);
 }
 
 .c-social-links .fa-instagram:hover {
@@ -161,36 +153,69 @@ span{
     color: var(--github);
 }
 
-.C-title{
+.c-social-links .fa-linkedin:hover {
+    color: #0077B5;
+}
+
+.C-title {
     font-size: 70px;
 }
 
-@media (max-width:500px) {
+@media (max-width: 768px) {
+    .info {
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+
+    .C-info .left-side {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        padding: 5%;
+    }
+
+    .C-info .right-side {
+        width: 100%;
+        float: none;
+        padding: 5%;
+    }
+
+    .c-social-links {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .C-title {
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
     .info {
         margin-left: 8%;
         margin-top: 15%;
     }
 
-    .info h1{
+    .info h1 {
         font-size: 100px;
         color: var(--txt-color);
         margin-bottom: 20px;
     }
 
-    .C-info .left-side{
-        /* border: 1px solid green; */
+    .C-info .left-side {
         width: 100%;
     }
-    .C-info .right-side{
+
+    .C-info .right-side {
         width: 90%;
     }
 
-    .c-social-links{
+    .c-social-links {
         margin-top: 20%;
     }
 
-    .C-title{
+    .C-title {
         font-size: 50px;
     }
-
 }
