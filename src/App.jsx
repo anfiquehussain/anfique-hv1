@@ -1,18 +1,21 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import About from "./Pages/About/About";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "./Pages/Landing/Landing";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div className="flex flex-col items-center">
-        <h1 className="text-9xl font-bold text-red-700">Welcome!!</h1>
-        <p className="mt-10 text-xl text-gray-500">
-          my name is anfique hussain v
-        </p>
+    <BrowserRouter>
+      <div className="bg-primary min-h-screen text-white">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 
