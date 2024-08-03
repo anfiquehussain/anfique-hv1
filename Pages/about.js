@@ -37,3 +37,18 @@ function openNav() {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+    // Alert box close functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const alertContainer = document.querySelector('.alert_container');
+    const closeButton = alertContainer.querySelector('i');
+
+    closeButton.addEventListener('click', function() {
+        alertContainer.classList.add('hide');
+        // Optional: Remove the alert from the DOM after animation
+        setTimeout(() => {
+            alertContainer.remove();
+        }, 300);
+    });
+});
+  
